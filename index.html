@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
+<link rel="stylesheet" href="stylesheets/style.css" />
+<title>COMP 150-MOB: Mobile Development</title>
+</head>
+
+<body>
+<h1>COMP 150-MOB: Mobile Development</h1>
+<h2>Tufts University Department of Computer Science, Fall 2017</h2>
+
+<h2>Overview</h2>
+<p>Mobile has an enormous impact on our lives and it is linking virtually the entire human population.  Students will work in pairs to design, implement, test, publish, and support mobile applications including web-based APIs.  The Android mobile platform will be predominately used.  Topics include constraints in mobile development, app lifecycle, permissions model, widgets, layouts, event handling, networking, geolocation, threat landscape.  There will also be an exercise to reverse engineer mobile apps.  Lower-level topics including the Android kernel and the radio layer may also be discussed.</p>
+
+<h2>Instructor</h2>
+<ul>
+<li>Ming Chow, <a href="mailto:mchow@cs.tufts.edu">mchow@cs.tufts.edu</a></li>
+<li>Office Hours: Wednesdays from 1 - 4 PM, or by appointment, "in my usual spot" (the collaboration area next to the CS Main Office in Halligan).  Hours are good until the last day of classes, December 7th.</li>
+<li>For emergencies or private matters, please e-mail or see me directly.</li>
+</ul>
+
+<h2>Teaching Assistants</h2>
+<ul>
+<li>None</li>
+</ul>
+
+<h2>Class Time and Location</h2>
+<ul>
+<li>Tuesdays and Thursdays, 1:30 - 2:45 PM in Halligan 111A</li>
+</ul>
+
+<h2>Prerequisites</h2>
+<ul>
+<li>COMP 15: Data Structures</li>
+</ul>
+
+<h2>Textbook</h2>
+<ul>
+<li>None</li>
+</ul>
+
+<h2>Basic Software Requirements</h2>
+<ol>
+	<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">Java Development Kit (JDK)</a></li>
+	<li><a href="https://developer.android.com/studio/index.html" target="_blank">Android Studio</a></li>
+	<li>Node.js</li>
+</ol>
+
+<h2>Assessment</h2>
+<ul>
+	<li>The Tiny Project (5%)</li>
+	<li>Semester Project (60%)</li>
+	<li>Engineering Notebook (25%)</li>
+	<li>Participation (10%)</li>
+</ul>
+
+<h2>What is the Engineering Notebook and Why For This Class?</h2>
+<p>Each team is required to maintain a publicly accessible engineering notebook.  This engineering notebook shall be in electronic format and be made online, one notebook per team.  The notebook can be in form of a blog (e.g., Tumblr, GitHub, WordPress), thus an engineering blog.  Social media (e.g., via Twitter, Facebook, Snapchat) is not acceptable.  Many professional engineers and engineering teams maintain notebooks for good reasons:</p>
+
+<ul>
+	<li>To keep a running record of activities</li>
+	<li>To record ideas</li>
+	<li>To be used as a legal document for patent activities and even in litigation</li>
+	<li>To record what work was done or not done in case a person leaves a project</li>
+	<li>To highlight successes</li>
+	<li>To highlight failures and what should be done the next time</li>
+	<li>To list upcoming plans and challenges</li>
+</ul>
+
+<p>On top of these reasons, I want:</p>
+<ul>
+	<li>To make the engineering notebooks available to other teams so other teams can learn from your work</li>
+	<li>To make you continue to develop your writing skills</li>
+</ul>
+
+<p>You may argue that a Git commit history serves the same purpose.  However, Git commit history is largely for the source code.  This course is much more than just writing code.  Example: you will be drawing and communicating visuals.</p>
+
+<p>At least one entry in your engineering notebook is required each week starting on week 1 (week ending September 8th).  At the very least, your team will need to highlight the wins and fails of the week, and plans for the upcoming weeks.  Each entry notebook must have a date.</p>
+
+<h2>References</h2>
+<ol>
+	<li><a href="https://developer.android.com/guide/index.html" target="_blank">Android API Guide</a></li>
+</ol>
+
+<h2 id="syllabus">Syllabus</h2>
+
+<h3>Topics of Discussion:</h3>
+<ul>
+	<li>Android Security Model</li>
+	<li>Layouts and Adapters</li>
+	<li>Services and Geolocation</li>
+	<li>Broadcast Messages, Broadcast Receivers, and Intents</li>
+	<li>Fragments</li>
+	<li>Background Services and Notifications</li>
+	<li>Data Persistence</li>
+	<li>Testing</li>
+	<li>Camera</li>
+	<li>Google Play Services</li>
+	<li>Reverse Engineering</li>
+</ul>
+
+<p class="note">Schedule is subject to change.</p>
+
+<table>
+<tr>
+<th>Date</th>
+<th>Agenda</th>
+<th>Deliverables</th>
+</tr>
+<tr>
+<td>Tuesday, September 5th</td>
+<td>
+	<ul>
+		<li>Course Introduction</li>
+	</ul>
+</td>
+<td>
+	<ul>
+		<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdGu5RXetZ7148RtlVFGItE3zJleXIE4jCJ7QQFgoJhEVWoug/viewform" target="_blank">Course Roster Form</a>. <span class="note">PLEASE COMPLETE ASAP!</span></li>
+		<li><a href="semester_project.html">Semester Project</a></li>
+	</ul>
+</td>
+</tr>
+<tr>
+<td>Thursday, September 7th</td>
+<td>
+	<ul>
+		<li>The Basics: Activities, Activity Lifecycle, UI Views, Widgets, Android.R</li>
+	</ul>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, September 12th</td>
+<td>
+	<ul>
+		<li>The Tools: Debugging and Profiling</li>
+	</ul>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, September 14th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, September 19th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, September 21st</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, September 26th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, September 28th</td>
+<td>&nbsp;</td>
+<td>
+	<ul>
+		<li>Tufts Fall 2017 Career Fair, Friday, September 29th, Gantcher Center, 11:30 AM - 2:30 PM</li>
+		<li>Reverse Career Fair (directly after the Career Fair), Halligan 102, 3 - 4 PM.  RSVP: <a href="https://docs.google.com/forms/d/e/1FAIpQLSd974GdxfnRWrgM3qyiS-lyGmaFUzt69OVj-n8S5G58Na4tiA/viewform">https://docs.google.com/forms/d/e/1FAIpQLSd974GdxfnRWrgM3qyiS-lyGmaFUzt69OVj-n8S5G58Na4tiA/viewform</a></li>
+	</ul>
+</td>
+</tr>
+<tr>
+<td>Tuesday, October 3rd</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, October 5th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, October 10th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, October 12th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, October 17th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, October 19th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, October 24th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, October 26th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, October 31st</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, November 2nd</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, November 7th</td>
+<td>NO CLASS</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, November 9th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, November 14th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, November 16th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, November 21st</td>
+<td>NO CLASS</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, November 28th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, November 30th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Tuesday, December 5th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Thursday, December 7th</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+
+<h2 id="policy">Course Policies</h2>
+
+<h2 id="ip">Intellectual Property</h2>
+<p>The intellectual property rights of any work produced by any student in this course rests with the student.  I will not have any part of your endeavors.</p>
+
+<h3>Electronic Devices</h3>
+<p>Laptops or mobile devices are not allowed to be used in class unless specified.  Phones must be silent.  You are allowed to politely step outside of the class to take phone calls (e.g., for emergencies, job offers).</p>
+
+<h3>Project Late Policy</h3>
+<p>Projects are due on the date and time they are specified.  Unlike my other courses, "homework tokens" are not used in this course.  There is a three day grace period to submit projects.  For example, if a project is due on October 1st, you will have until October 4th to submit the project.  Submitting after the grace period will mean no credit for project.</p>
+
+</body>
+</html>

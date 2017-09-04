@@ -1,6 +1,5 @@
 # Tuesday, September 5th: Course Introduction
-* This course is 5 years in the making, since 2011
-* I can't think of anything that we will not want to discuss in this course
+* This course is many years in the making, since 2011
 * Why (finally) disuss about mobile in a CS curriculum?  Mobile Development sounds very vocational:
 	- Mobile is not going away: even in third-world countries, almost everyone has a mobile device
 	- Mobile is very different environment than traditional PC
@@ -20,13 +19,16 @@
 	- To go through pain.  You are now at the mercy of corporations and things will change all the time.  There will be things you will do not understand and you have little control.
 * What we will be using in this course: Android.  Baseline target of devices: Android 6.0 (Marshmellow).
 * Why not iOS for this course?
-* Assessment and the Semester Project:
+* Q: Do we need an Android device for this course? A: No
+* Assessment
 	- Engineering notebook
+	- Semester project
+	- Tiny project
+	- Your participation
 * What you will need for the course:
 	- Java
 	- Android Studio
 	- Node.js
-* Q: Do we need an Android device for this course? A: No
 * Let's start a simple app in Android Studio and pinpoint the big ideas and topics......
 	- The reason why we are doing this: we have moved away from looking "under the hood."  So much is now abstracted in a CS curriculum.
 

@@ -25,7 +25,8 @@
 * What you will need for the course:
 	- Java
 	- Android Studio
-* Q: Do we need an Android device for this course? A: No!
+	- Node.js
+* Q: Do we need an Android device for this course? A: No
 * Let's start a simple app in Android Studio and pinpoint the big ideas and topics......
 	- The reason why we are doing this: we have moved away from looking "under the hood."  So much is now abstracted in a CS curriculum.
 

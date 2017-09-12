@@ -57,7 +57,6 @@
 * Model View Controller (MVC) design pattern
 
 # Tuesday, September 12th: The Toolchain
-* Leg 1 due this week.  What you need to do: email me link to your team's engineering notebook
 * Last class: a simple app with an activity, a view, widgets, some layouts, R
 * A finer point about widgets, layouts: they are all views! Each component on the screen is either a View or ViewGroup!  The big idea: container
 	-	![Diagram](view_tree.png "Diagram")

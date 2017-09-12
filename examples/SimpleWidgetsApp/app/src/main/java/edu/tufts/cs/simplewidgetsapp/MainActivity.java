@@ -5,9 +5,13 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.RadioGroup;
+import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,5 +52,24 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onButtonClick(View view) {
+        //Log.v("*****", "You clicked on the button!");
+        TextView feedback = (TextView) findViewById(R.id.feedback);
+        RadioGroup rg = (RadioGroup) findViewById(R.id.votingGroup);
+
+        // Check if a radio button is checked
+        // Reference: https://stackoverflow.com/questions/11194515/android-get-value-of-the-selected-radio-button
+        if(rg.getCheckedRadioButtonId() != -1) {
+            int checkedRadioButtonId = rg.getCheckedRadioButtonId();
+            View checkedRadioButtonView = rg.findViewById(checkedRadioButtonId);
+            int checkedRadioButtonIndex = rg.indexOfChild(checkedRadioButtonView);
+            RadioButton theCheckedRadioButton = (RadioButton) rg.getChildAt(checkedRadioButtonIndex);
+            feedback.setText("Thanks for voting for " + (String)theCheckedRadioButton.getText());
+        }
+        else {
+            feedback.setText("Sorry, you did not vote!");
+        }
     }
 }

@@ -54,11 +54,14 @@
 * Designing a view and widgets
 * Linking a view into an activity
 * The Android `R` class: dynamically generated class, created during build process to dynamically identify all assets (from strings to android widgets to layouts), for usage in java classes in Android app.  More: http://stackoverflow.com/questions/6804053/understand-the-r-class-in-android.  DO NOT MANUALLY MODIFY THIS CLASS!
-* Interaction
+* Model View Controll (MVC) design pattern
 
 # Tuesday, September 12th: The Toolchain
 * Leg 1 due this week.  What you need to do: email me link to your team's engineering notebook
-* Last class: a simple app with an activity, a view, and widgets
+* Last class: a simple app with an activity, a view, widgets, some layouts, R
+* A finer point about widgets, layouts: they are all views! Each component on the screen is either a View or ViewGroup!  The big idea: container
+	-	![Diagram](view_tree.png "Diagram")
+	- Source: https://stackoverflow.com/questions/27352476/difference-between-view-and-viewgroup-in-android
 * Today: more basics, the tools
 * `.apk` - the binary of the app.  Automatically generated for each app.  Believe it or not, it is just a ZIP file! http://stackoverflow.com/questions/3599210/view-content-of-apk-file.  Later in this course, we will discuss about reverse engineering an app
 	- Flappy Bird

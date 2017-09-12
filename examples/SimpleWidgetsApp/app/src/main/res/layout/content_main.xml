@@ -16,11 +16,12 @@
         tools:layout_editor_absoluteY="8dp">
 
         <RadioGroup
+            android:id="@+id/votingGroup"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <RadioButton
-                android:id="@+id/voteOption"
+                android:id="@+id/voteOptionGerson"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -29,7 +30,7 @@
                 tools:layout_editor_absoluteY="41dp" />
 
             <RadioButton
-                android:id="@+id/voteOption"
+                android:id="@+id/voteOptionKang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -38,7 +39,7 @@
                 tools:layout_editor_absoluteY="83dp" />
 
             <RadioButton
-                android:id="@+id/voteOption"
+                android:id="@+id/voteOptionKodos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -47,11 +48,11 @@
                 tools:layout_editor_absoluteY="127dp" />
 
             <RadioButton
-                android:id="@+id/voteOption"
+                android:id="@+id/voteOptionOther"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RadioButton"
+                android:text="Go Waste Your Vote"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="172dp" />
 
@@ -60,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onButtonClick"
                 android:text="Submit My Vote"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="216dp" />

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.tufts.cs.simplewidgetsapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="540dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/voteOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gerson"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="41dp" />
+
+            <RadioButton
+                android:id="@+id/voteOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kang"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="83dp" />
+
+            <RadioButton
+                android:id="@+id/voteOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kodos"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="127dp" />
+
+            <RadioButton
+                android:id="@+id/voteOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="172dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Submit My Vote"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="216dp" />
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="..."
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="286dp" />
+        </RadioGroup>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

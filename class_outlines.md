@@ -54,7 +54,7 @@
 * Designing a view and widgets
 * Linking a view into an activity
 * The Android `R` class: dynamically generated class, created during build process to dynamically identify all assets (from strings to android widgets to layouts), for usage in java classes in Android app.  More: http://stackoverflow.com/questions/6804053/understand-the-r-class-in-android.  DO NOT MANUALLY MODIFY THIS CLASS!
-* Model View Controll (MVC) design pattern
+* Model View Controller (MVC) design pattern
 
 # Tuesday, September 12th: The Toolchain
 * Leg 1 due this week.  What you need to do: email me link to your team's engineering notebook

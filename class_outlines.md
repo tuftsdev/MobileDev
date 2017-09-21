@@ -81,3 +81,30 @@
 * `lint` - Lint tool for Android apps.  IMPORTANT for this class. https://developer.android.com/studio/write/lint.html
 * `fastboot` -  Used to manipulate the flash partitions of the Android developer phone.  Used to install custom Android ROM (e.g., for rooting)
 * `monkeyrunner` - https://developer.android.com/studio/test/monkeyrunner/index.html
+
+# Thursday, September 21st: Android Security Model
+* Very different model compared to Unix, PC
+* The big ideas:
+	- An app could take over your system
+	- Limit power of installed software...
+	- ...let programs to communicate or call each other
+* Security fundamental 101: least privilege
+* The application sandbox (by default)
+	- "System assigns a unique user ID (UID) to each Android application and runs it as that user in a separate process."
+	- "Applications cannot interact with each other and applications have limited access to the operating system."
+* Least privilege-based permissions to protected APIs, system resources (e.g., camera, GPS, Internet)
+	- Apps can only access a limited range of system resources by default
+	- Permissions must be stated in `AndroidManifest.xml` file for app
+		- List: https://developer.android.com/guide/topics/security/permissions.html
+	- Permissions check on sensitive data and inputs including calendar and personal information (user grants access)
+	- The very ugly: this system is prone to abuse. Read http://www.cs.tufts.edu/comp/116/archive/wrichard.pdf by Will Richard (former student in my Security class, from spring 2012)
+* No Security Manager (legacy code), no Java Sandbox
+* Can make system calls (via NDK)
+* Apps can access the kernel, drivers, syscalls, etc. --if device is rooted
+* Address Space Layout Randomization (ASLR) supported in Android 4.0
+* Interprocess communications
+	- Service: runs in background without blocking an activity or deter the user experience
+	- Intent: asynchronous messaging system in Android; can be sent to your application or between applications. Messages are objects.
+	- Broadcast Receiver: responds to system-wide announcements
+	- Intents and list of broadcasts: https://developer.android.com/reference/android/content/Intent.html
+* Reference: https://source.android.com/security/

@@ -108,3 +108,27 @@
 	- Broadcast Receiver: responds to system-wide announcements
 	- Intents and list of broadcasts: https://developer.android.com/reference/android/content/Intent.html
 * Reference: https://source.android.com/security/
+
+# Thursday, September 28th: Networking, Services, Asynchronous Task, Geolocation
+* To enable networking, first thing you need to do in your `AndroidManifest.xml` file is...?
+* To make a networking call in Java, use built-in Java packages: `URL`, `HttpURLConnection`, etc.
+* Threads
+* But it is no longer that simple now.  You see, back in the good old days...
+* A topic that is taught in COMP 20 and for many, it is hard to grasp...
+* `AsyncTask` (since 2012): "This class allows you to perform background operations and publish results on the UI thread without having to manipulate threads and/or handlers."
+	- Reference: https://developer.android.com/reference/android/os/AsyncTask.html
+* Service: runs in background without blocking an activity or deter the user experience
+* Reference: https://developer.android.com/training/location/index.html
+* Two ways to do geolocation:
+	- Google Play Services Location APIs
+	- Android Framework Location APIs (`android.location`)
+* The idea:
+	1. Grant permissions in `AndroidManifest.xml`:
+		- `<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>`
+   	 	- `<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>`
+	2. Start a location manager: https://developer.android.com/reference/android/location/LocationManager.html
+	3. Set up a location listener to list for location changes: https://developer.android.com/reference/android/location/LocationListener.html
+	4. Check permissions to use geolocation'
+	5. Request location updates
+* Example app: `SimpleGeoApp`
+* Reverse geolocation?

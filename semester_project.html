@@ -118,7 +118,7 @@
 <p><em>Scanventures</em> by Meet Patel and Jeremy Su</p>
 <ul>
 	<li>Engineering Blog: <a href="https://scanventures.wordpress.com/" target="_blank">https://scanventures.wordpress.com/</a></li>
-	<li>Source: <a href="https://github.com/Meetia/Scanventures" target="_blank">https://github.com/Meetia/Scanventures</a></li>
+	<li>Source: <a href="https://github.com/Meetia/ARventures" target="_blank">https://github.com/Meetia/ARventures</a></li>
 	<li>Google Play URL: <a href="" target="_blank"></a></li>
 </ul>
 <p><em>Speaky Jumbo</em> by Tong Dong and Yedi Wang</p>
@@ -224,8 +224,48 @@
 </ul>
 
 <hr/>
-<h2 id="leg4">Leg 4: Testing and Basic Security Audit of Your App (MVP), Target for Thursday, November 7th</h2>
+<h2 id="leg4">Leg 4: Testing and Basic Security Audit of Your App (MVP)</h2>
+<h3>Overview</h3>
+<p>Let's face it: generally speaking, we talk a good game about testing but have little to show for it (read: testing is not done).</p>
+<p>The goal of this leg is to prove that you have done some testing and even have considered basic security in your app and app infrastructure.  There are many methods to go about testing and basic security auditing, including:</p>
 
+<ul>
+	<li>Usability testing of app with a small set of users</li>
+	<li>Unit testing (of mobile app and app infrastructure)</li>
+	<li>Instrumentation testing</li>
+	<li>Static analysis of mobile app</li>
+	<li>Dynamic analysis of mobile app</li>
+	<li>Static analysis of web app, infrastructure</li>
+	<li>Dynamic analysis of web app, infrastructure</li>
+</ul>
+
+<h3>Instructions and Requirements</h3>
+<ol>
+	<li>Analyze your mobile app code with <code>lint</code>.  Lint is a code scanning tool that can help you to easily identify and correct problems with the structural quality of your code, without having to execute the app or write any test cases.  Provide the initial <code>lint</code> report inside a folder named <code>tests</code> at the top level of your mobile app repository.  Make any necessary changes.  After making any necessary changes, rerun <code>lint</code> scan and also provide that report in your repository.  There should be no errors on second <code>lint</code> scan.</li>
+	<li>Install and use Fabric's Crashlytics for your mobile app: <a href="https://fabric.io/kits/android/crashlytics/install" target="_blank">https://fabric.io/kits/android/crashlytics/install</a> (free).  The purposes of Crashlytics: (1) manage and report on app crashes and (2) pinpoint, down to the exact line of code, the issues causing the app crashes.  I've been using Crashlytics since 2012 and it has helped immensely.  Make sure to share the crash report with me (use my Tufts CS email address).</li>
+	<li>Choose at least two other methods of testing.  Make sure to provide initial test report and report(s) after changes based on initial test report.</li>
+	<li>Write about your testing experiences and findings in your engineering blog.  This is on top of your weekly status entry.</li>
+</ol>
+<p>I will be reviewing your tests and evidence of testing on Thursday, November 7th in the evening (after dinner).</p>
+
+<h3>Small List of Tools</h3>
+<ul>
+	<li><a href="https://developer.android.com/studio/write/lint.html" target="_blank">Android Lint</a></li>
+	<li><a href="http://selendroid.io/" target="_blank">Selendroid</a></li>
+	<li><a href="http://dexlabs.org/" target="_blank">Dexter</a></li>
+	<li><a href="https://analysiscenter.veracode.com">Veracode Analysis Center</a> (contact me for access)
+		<ul>
+			<li>Sample report (of DejaView app, a Hackathon project by John Westwig and Toby Glover): <a href="examples/DetailedReport_dejaviewandroid_27_Oct_2016.pdf">DetailedReport_dejaviewandroid_27_Oct_2016.pdf</a>
+		</ul>
+	</li>
+</ul>
+
+<h3>References</h3>
+<ul>
+	<li><a href="https://developer.android.com/training/testing/unit-testing/index.html" target="_blank">Building Effective Unit Tests (developer.android.com)</a></li>
+	<li><a href="https://developer.android.com/training/testing/start/index.html" target="_blank">Getting Started with Testing (developer.android.com)</a></li>
+	<li><a href="https://www.veracode.com/blog/2013/12/static-testing-vs-dynamic-testing" target="_blank">Static Testing vs. Dynamic Testing (Veracode)</a></li>
+</ul>
 <hr/>
 <h2 id="leg5">Leg 5: Launch App to the Google Play Store, Target for Thursday, November 17th</h2>
 
@@ -236,7 +276,7 @@
 <h2 id="leg7">Leg 7: Update App on Google Play Store and a Reflection, Target for Thursday, December 7th<h2>
 
 <hr/>
-<h2 id="teams2016">Fall 2016 Apps</h2>
+<!--<h2 id="teams2016">Fall 2016 Apps</h2>
 <p><em>BigGameHunter</em> by Derek Benson and Walton Lee</p>
 <ul>
 	<li>Engineering Blog: <a href="https://github.com/waltonlee/BGH_Mobile/" target="_blank">https://github.com/waltonlee/BGH_Mobile/</a></li>
@@ -356,7 +396,7 @@
 	<li>Engineering Blog: <a href="http://elifkinli.tumblr.com/" target="_blank">http://elifkinli.tumblr.com/</a></li>
 	<li>Source: <a href="https://github.com/elifkinli/Yummies" target="_blank">https://github.com/elifkinli/Yummies</a></li>
 	<li>Google Play URL: <a href="#" target="_blank">TBA</a></li>
-</ul>
+</ul>-->
 
 </body>
 </html>

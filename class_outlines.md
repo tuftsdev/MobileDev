@@ -132,3 +132,17 @@
 	5. Request location updates
 * Example app: `SimpleGeoApp`
 * Reverse geolocation?
+
+# Tuesday, October 31st: Production
+* Preliminaries: Static vs dynamic analysis
+* Preliminaries: public and private keys
+* Preliminaries: code signing
+	- The simple question: how do you trust what you are downloading, using?  How do you ensure the integrity and authenticity of the software?
+	- Microsoft: https://msdn.microsoft.com/en-us/library/ms537361(v=vs.85).aspx
+	- Apple: https://developer.apple.com/support/code-signing/. "Code signing your app assures users that it is from a known source and the app hasn’t been modified since it was last signed. Before your app can integrate app services, be installed on a device, or be submitted to the App Store, it must be signed with a certificate issued by Apple."
+* Veracode static analysis: https://analysiscenter.veracode.com/
+* Distribution model: iOS vs Android
+	- Tradeoffs
+* Google Play Developer Console: https://play.google.com/apps/publish/
+* Before uploading your app (APK file) to Google Play, app must be signed. App signing: https://developer.android.com/studio/publish/app-signing.html
+	- War story: don't lose your private key or keystore
